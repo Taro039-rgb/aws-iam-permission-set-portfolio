@@ -69,6 +69,20 @@ Permission Set のみを切り替えて検証を行いました。
 
 ---
 
+## エビデンス
+
+### Dev 権限（成功）
+EC2 インスタンスの作成および起動が成功することを確認。
+
+![dev-success](images/devec2_1.png)
+
+### ReadOnly 権限（拒否）
+EC2 作成時に IAM 権限で拒否されることを確認。
+
+![readonly-deny](images/readonlyec2.png)
+
+---
+
 ## 検証内容詳細
 
 ### ReadOnly 権限での検証
